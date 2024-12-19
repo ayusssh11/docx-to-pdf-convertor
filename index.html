@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCX to PDF Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DOCX to PDF Converter</h1>
+        <p>Convert your DOCX files to PDF quickly and easily!</p>
+    </header>
+    <main>
+        <section class="converter">
+            <h2>Upload Your DOCX File</h2>
+            <form id="uploadForm" action="/convert" method="POST" enctype="multipart/form-data">
+                <input type="file" name="docx_file" accept=".docx" required>
+                <button type="submit">Convert to PDF</button>
+            </form>
+            <div class="result">
+                <h3>Your Converted PDF will be Available Here:</h3>
+                <a href="#" id="downloadLink">Download PDF</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 DOCX to PDF Converter. All rights reserved.</p>
+    </footer>
+</body>
+</html>
